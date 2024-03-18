@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/31d29d638f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" alt="" class="logo">
+                <!-- <p class="logo">Portfolio</p> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I'm <span>Piyush</span><br>Sharma from Bharat</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/mebg.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates natus ducimus quas distinctio sed corporis optio consectetur sit quibusdam voluptate repudiandae officiis dolore dolores doloribus veritatis magni ad animi esse suscipit hic! Ea, rem at cumque tempore commodi harum velit sint. Itaque fugiat dolor error excepturi </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Languages</span><br>HTML,CSS JavaScript</li>
+                            <div class="svg">
+                            <img src="https://sk-mousin-ali.github.io/Portfolio/img/logo/html.svg" alt="" >
+                            <img src="https://sk-mousin-ali.github.io/Portfolio/img/logo/css.svg" alt="" >
+                            <img src="https://sk-mousin-ali.github.io/Portfolio/img/logo/javascript.svg" ></div>
+                            <li><span>Tools & Frameworks</span><br>Bootstrap</li>
+                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" class="boot">
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA (Bachelor of Computer Applications)</span><br>6.5 CGPA</li>
+                            <li><span>12th</span><br>90.8% marks</li>
+                            <li><span>10th</span><br>80 marks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -------------Services---------------->
+<div id="services">
+    <div class="container">
+    <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Frontend Web Design</h3><br>
+                <p>Creating and designing the user interface (UI) and user experience (UX) of websites and web applications. The primary responsibility of a front-end developer is to ensure that the visual and interactive aspects of a website or application are user-friendly, aesthetically pleasing, and functionally efficient.</p>
+                <a href="">learn more</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- ----------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://cdn.mos.cms.futurecdn.net/U8JaYvumQNxwDTjbJCjUeL.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://images.ctfassets.net/4cd45et68cgf/637ArQo6YNsJf48Xw3zUAg/d030f9065a0fe54de777eaa600cf3fcb/N-Games_March_936x622.png?w=2000" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://cdn.dribbble.com/users/6259454/screenshots/15661680/media/2633c0e8d7d38083d9b9c7d0b910a595.png?resize=400x300&vertical=center" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://img-c.udemycdn.com/course/750x422/4473780_1029.jpg" alt="">
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, excepturi.</p>
+                        <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------------contact------------------ -->
+        <div id="contact">
+            <div class="container">
+                 <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="https://www.pcworld.com/wp-content/uploads/2023/04/speedtest-100733792-orig.jpg?quality=50&strip=all" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                 </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Piyush Sharma. Made by <i class="fa-solid fa-heart"></i> Me</p>
+            </div>
+        </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
